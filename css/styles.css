@@ -199,11 +199,15 @@ img {
   min-width: 169px;
   display: block;
   margin: 0 auto;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* #endregion ===== ===== ===== ===== ===== HERO ===== ===== ===== ===== ===== */
 
@@ -324,7 +328,6 @@ img {
 }
 
 .social-icon-link {
-  fill: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,6 +341,10 @@ img {
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: #404bbf;
+}
+
+.social-icon-link .icon {
+  fill: #f4f4fd; /* Замість #fff */
 }
 
 .social-icon-link {
